@@ -14,7 +14,7 @@ fi
 
 test -f $sbtjar || exit 1
 sbtjar_md5=$(openssl md5 < $sbtjar|cut -f2 -d'='|awk '{print $1}')
-if [ "${sbtjar_md5}" != 9d832c4cfdb889103bd37a8bda3faa0e ]; then
+if [ "${sbtjar_md5}" != 7341059aa30c953021d6af41c89d2cac ]; then
   echo 'bad sbtjar!' 1>&2
   exit 1
 fi
